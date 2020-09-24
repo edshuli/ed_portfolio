@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Edna Shuli Portfolio</title>
 </head>
@@ -69,7 +71,7 @@
             </div>
             <div class="col-md-6 col-xl-3">
                 <div class="personal-info">
-                    <img class="image-1" src="edna.jpg">
+                    <img class="image-1" src="/assets/img/edna.jpg">
                 </div>
             </div>
 
@@ -112,7 +114,7 @@
                         <span class="progress-right">
                             <span class="progress-bar"></span>
                         </span>
-                        <div class="progress-value">85%</div>
+                        <div class="progress-value">75%</div>
                     </div>
                     <span id="icons"><i class="fab fa-js" aria-hidden="true"></i> JavaScript Skill</span>
                 </div>
@@ -124,9 +126,9 @@
                         <span class="progress-right">
                             <span class="progress-bar"></span>
                         </span>
-                        <div class="progress-value">85%</div>
+                        <div class="progress-value">65%</div>
                     </div>
-                    <span id="icons"><i class="fa fa-laptop" aria-hidden="true"></i> Bootstrap Skill</span>
+                    <span id="icons"><i class="fab fa-vuejs"></i> Vue.js</span>
                 </div>
             </div>
             <div class="row">
@@ -138,9 +140,9 @@
                         <span class="progress-right">
                             <span class="progress-bar"></span>
                         </span>
-                        <div class="progress-value">90%</div>
+                        <div class="progress-value">80%</div>
                     </div>
-                    <span id="icons"><i class="fab fa-html5" aria-hidden="true"></i> HTML Skill</span>
+                    <span id="icons"><i class="fas fa-laptop-code"></i>JQuery</span>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="progress blue">
@@ -152,7 +154,7 @@
                         </span>
                         <div class="progress-value">85%</div>
                     </div>
-                    <span id="icons"><i class="fab fa-css3" aria-hidden="true"></i> CSS Skill</span>
+                    <span id="icons"><i class="fab fa-uikit"></i>UI/UX Design</span>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="progress blue">
@@ -162,9 +164,9 @@
                         <span class="progress-right">
                             <span class="progress-bar"></span>
                         </span>
-                        <div class="progress-value">85%</div>
+                        <div class="progress-value">75%</div>
                     </div>
-                    <span id="icons"><i class="fab fa-js" aria-hidden="true"></i> JavaScript Skill</span>
+                    <span id="icons"><i class="fab fa-git-square"></i>Git Skill</span>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="progress blue">
@@ -180,56 +182,90 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="round progress">
-                        <strong></strong>
-                        <span><i class="fab fa-html5" aria-hidden="true"></i> HTML Skill</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="round" data-value="0.74" data-size="200" data-thickness="6">
-                        <strong></strong>
-                        <span><i class="fab fa-css3" aria-hidden="true"></i> CSS Skill</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="round" data-value="0.65" data-size="200" data-thickness="6">
-                        <strong></strong>
-                        <span><i class="fab fa-js" aria-hidden="true"></i> JavaScript Skill</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="round" data-value="0.95" data-size="200" data-thickness="6">
-                        <strong></strong>
-                        <span><i class="fa fa-laptop" aria-hidden="true"></i> Bootstrap Skill</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="btn" onClick="Circlle('.round');">Refresh</button> -->
     </div>
-    <section id="projects">
-        <h1>These Are My Results</h1>
-    </section>
-    <section id="contact">
+    <div class="container-fluid" id="projects">
+        <!-- <div class="row">
+            <div class="col">
+                <img src="/assets/img/flipflop.jpg" id="works" class="rounded float-left w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
+                <p class="figure-caption">A caption for the above image.</p>
+                <img src="/assets/img/flipflop.jpg" id="works" class="rounded float-right w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
+                <p class="figure-caption">A caption for the above image.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="/assets/img/flipflop.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
+                <p class="figure-caption">A caption for the above image.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="/assets/img/flipflop.jpg" id="works" class="rounded float-left w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
+                <p class="figure-caption">A caption for the above image.</p>
+                <img src="/assets/img/flipflop.jpg" id="works" class="rounded float-right w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
+                <p class="figure-caption">A caption for the above image.</p>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col">
+                <figure class="figure ">
+                    <a href="https://edshuli.github.io/Portfolio/"><img src="/assets/img/port.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
+                    <p class="figure-caption ">A caption for the above image.</p>
+                </figure>
+                <figure class="figure ">
+                    <a href="https://edshuli.github.io/My-online-resume/"><img src="/assets/img/resume.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
+                    <p class="figure-caption ">A caption for the above image.</p>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <figure class="figure ">
+                    <a href="https://edshuli.github.io/FlipFlop/" target="._blank"><img src="/assets/img/flipflop.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
+                    <p class="figure-caption ">A caption for the above image.</p>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <figure class="figure ">
+                    <a href="https://yiami-project.herokuapp.com/"><img src="/assets/img/yiami.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
+                    <p class="figure-caption ">A caption for the above image.</p>
+                </figure>
+                <figure class="figure ">
+                    <a href="https://ecompro4.herokuapp.com/"><img src="/assets/img/techforyou.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
+                    <p class="figure-caption ">A caption for the above image.</p>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <section id="contact ">
         <h1>Available Anytime</h1>
     </section>
     <!-- Script -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
     </script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    <script src="script.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous ">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous ">
     </script>
 
 
 </body>
+<!-- AOS.js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+<script>
+    // AOS.init();
+    AOS.init({
+        delay: 100, // values from 0 to 3000, with step 50ms
+        duration: 2000, // values from 0 to 3000, with step 50ms
+        easing: "ease-out-cubic",
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+    });
+</script>
 
 </html>
