@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind Library -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" /> -->
     <link rel="stylesheet" href="style.css">
     <title>Edna Shuli Portfolio</title>
 </head>
@@ -62,11 +64,11 @@
                         Node.js and GIT. I also specialize in people skills because of my previous work experiences, I am a very social person with good organisation and communication skills who adpats very fast in new environment and loves being a member
                         of a team.
                     </p>
-                    <a href="/" download><button class="btn btn-1">Check my work!</button></a>
+                    <a href="#projects"><button class="btn btn-1">Check my work!</button></a>
                     </br>
                     <p>An extra <span class="title-2">TIP!</span> about myself. I love also puzzles, drawing, dancing, outdoor activities with friends and exploring the world.</p>
                 </div>
-                <a href="assets/cv/Edna-Shuli-Curriculum-Vitae.pdf" download><button class="btn">Download
+                <a href="assets/cv/Edna_Shuli CV.pdf" download><button class="btn btn-1">Download
                         CV!</button></a>
             </div>
             <div class="col-md-6 col-xl-3">
@@ -184,66 +186,106 @@
         </div>
     </div>
     <div class="container-fluid" id="projects">
-        <!-- <div class="row">
-            <div class="col">
-                <img src="/assets/img/flipflop.jpg" id="works" class="rounded float-left w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
-                <p class="figure-caption">A caption for the above image.</p>
-                <img src="/assets/img/flipflop.jpg" id="works" class="rounded float-right w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
-                <p class="figure-caption">A caption for the above image.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img src="/assets/img/flipflop.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
-                <p class="figure-caption">A caption for the above image.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img src="/assets/img/flipflop.jpg" id="works" class="rounded float-left w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
-                <p class="figure-caption">A caption for the above image.</p>
-                <img src="/assets/img/flipflop.jpg" id="works" class="rounded float-right w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
-                <p class="figure-caption">A caption for the above image.</p>
-            </div>
-        </div> -->
-        <div class="row">
-            <div class="col">
-                <figure class="figure ">
-                    <a href="https://edshuli.github.io/Portfolio/"><img src="/assets/img/port.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
-                    <p class="figure-caption ">A caption for the above image.</p>
+        <div class="projects-container">
+            <div class="row">
+                <figure class="col-lg-6 text-center">
+                    <a href="https://edshuli.github.io/Portfolio/" target="_blank"><img src="/assets/img/port.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
+                    <a href="https://edshuli.github.io/Portfolio/" target="_blank"><button class="btn btn-1 btn-site">Visit Site</button></a><a href="https://github.com/edshuli/Portfolio" target="_blank"><button class="btn btn-1 btn-code">View Code</button></a>
                 </figure>
-                <figure class="figure ">
-                    <a href="https://edshuli.github.io/My-online-resume/"><img src="/assets/img/resume.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
-                    <p class="figure-caption ">A caption for the above image.</p>
+                <figure class="col-lg-6 text-center">
+                    <a href="https://edshuli.github.io/My-online-resume/" target="_blank"><img src="/assets/img/resume.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
+                    <!-- <p class="figure-caption ">Resume</p> -->
+                    <a href="https://edshuli.github.io/My-online-resume/" target="_blank"><button class="btn btn-1 btn-site">Visit Site</button></a><a href="https://github.com/edshuli/My-online-resume" target="_blank"><button
+                            class="btn btn-1 btn-code">View Code</button></a>
                 </figure>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <figure class="figure ">
-                    <a href="https://edshuli.github.io/FlipFlop/" target="._blank"><img src="/assets/img/flipflop.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
-                    <p class="figure-caption ">A caption for the above image.</p>
-                </figure>
+            <div class="row">
+                <div class="col text-center">
+                    <figure class="figure">
+                        <a href="https://edshuli.github.io/FlipFlop/" target="._blank"><img src="/assets/img/flipflop.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
+                        <!-- <p class="figure-caption ">Travel Site</p> -->
+                        <a href="https://edshuli.github.io/FlipFlop/" target="_blank"><button class="btn btn-1 btn-site">Visit Site</button></a><a href="https://github.com/edshuli/FlipFlop" target="_blank"><button
+                                class="btn btn-1 btn-code">View Code</button></a>
+                    </figure>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <figure class="figure ">
+            <div class="row">
+                <figure class="col-lg-6 text-center">
                     <a href="https://yiami-project.herokuapp.com/"><img src="/assets/img/yiami.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
-                    <p class="figure-caption ">A caption for the above image.</p>
+                    <!-- <p class="figure-caption ">Recipe Site</p> -->
+                    <a href="https://yiami-project.herokuapp.com/" target="_blank"><button class="btn btn-1 btn-site">Visit Site</button></a><a href="https://github.com/edshuli/Yiami-DCProject" target="_blank"><button
+                            class="btn btn-1 btn-code">View Code</button></a>
                 </figure>
-                <figure class="figure ">
+                <figure class="col-lg-6 text-center">
                     <a href="https://ecompro4.herokuapp.com/"><img src="/assets/img/techforyou.jpg" id="works" class="rounded mx-auto d-block w-full align-middle rounded-t-lg" alt="..." width="304" height="236" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"></a>
-                    <p class="figure-caption ">A caption for the above image.</p>
+                    <!-- <p class="figure-caption ">E-commerce Project</p> -->
+                    <a href="https://ecompro4.herokuapp.com/" target="_blank"><button class="btn btn-1 btn-site">Visit Site</button></a><a href="https://github.com/edshuli/e-commerce-project4" target="_blank"><button
+                            class="btn btn-1 btn-code">View Code</button></a>
                 </figure>
             </div>
         </div>
     </div>
-    <section id="contact ">
-        <h1>Available Anytime</h1>
-    </section>
+    <div class="container-fluid" id="contact">
+        <div class="row">
+            <div class="col">
+                <!-- Text Box Container -->
+                <div class="title-4">
+                    <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+                </div>
+            </div>
+        </div>
+        <!-- List Container -->
+        <div class="contact-container">
+            <div class="row">
+                <div class="col">
+                    <div class="center-form">
+                        <form>
+                            <div class="contact-item">
+                                <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                            </div>
+                            <div class="contact-item">
+                                <input type="text" name="phone" id="phonenumber" class="form-control" placeholder="Phone" required />
+                            </div>
+                            <div class="contact-item">
+                                <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                            </div>
+                            <div class="contact-item">
+                                <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col">
+                                    <button class="btn btn-1">READY? GO!</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div id="footer">
+            <!-- Social Media Buttons -->
+            <div class="row">
+                <div class="col">
+                    <div class="mt-6 text-center" id="icons">
+                        <a href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram  items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                        <a href="https://www.linkedin.com/in/edna-shuli-49142888/" target="_blank"><i
+                                class="fab fa-linkedin-in items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                        <a href="assets/cv/Edna_Shuli CV.pdf" download><i
+                                class="fas fa-download items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                        <a href="https://github.com/edshuli" target="_blank"><i
+                                class="fab fa-github items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Script -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
     </script>
@@ -262,7 +304,7 @@
     AOS.init({
         delay: 100, // values from 0 to 3000, with step 50ms
         duration: 2000, // values from 0 to 3000, with step 50ms
-        easing: "ease-out-cubic",
+        easing: "ease-out-cubic ",
         once: false, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
     });
