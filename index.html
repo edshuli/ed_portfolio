@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Tailwind Library -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" /> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_4EM0VTKBJefz9cCgaCvUO");
+        })();
+    </script>
     <link rel="stylesheet" href="style.css">
     <title>Edna Shuli Portfolio</title>
 </head>
@@ -60,8 +66,8 @@
                 <hr class="title-divider">
                 </p>
                 <div class="about-item">
-                    <p><span class="title-2">I'm Edna <i class="far fa-smile-wink"></i> a Front End Developer</span> who loves web design and delivering high-quality projects. I specialize in HTML, CSS, JS, Vue.js frameworks, JQuey, Anime.js, Bootstrap,
-                        Node.js and GIT. I also specialize in people skills because of my previous work experiences, I am a very social person with good organisation and communication skills who adpats very fast in new environment and loves being a member
+                    <p><span class="title-2">I'm Edna <i class="far fa-smile-wink"></i> a Front End Developer</span> who loves web design and delivering high-quality projects. I specialize in HTML, CSS, JS, Vue.js frameworks, JQuery, Anime.js, Bootstrap,
+                        Node.js and GIT. I also specialize in people skills because of my previous work experiences, I am a very social person with good organisation and communication skills who adapts very fast in new environment and loves being a member
                         of a team.
                     </p>
                     <a href="#projects"><button class="btn btn-1">Check my work!</button></a>
@@ -239,7 +245,7 @@
             <div class="row">
                 <div class="col">
                     <div class="center-form">
-                        <form>
+                        <form onsubmit="return sendMail(this);">
                             <div class="contact-item">
                                 <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                             </div>
@@ -254,7 +260,7 @@
                             </div>
                             <div class="row text-center">
                                 <div class="col">
-                                    <button class="btn btn-1">READY? GO!</button>
+                                    <button type="submit" class="btn btn-1">READY? GO!</button>
                                 </div>
                             </div>
                         </form>
@@ -285,6 +291,7 @@
     </footer>
 
     <!-- Script -->
+    <script src="assets/js/email.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
